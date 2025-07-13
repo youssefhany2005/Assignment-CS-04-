@@ -190,6 +190,68 @@
             //}
             #endregion
             #endregion
+            //V-04
+            #region C# 8.0 [Pattern Matching without alias name - Switch Expressions] Property Pattern
+            #region Example 01 - Pattern Matching without alias name 
+            //string Option = Console.ReadLine();
+            //string Message;
+
+            //switch(Option)
+            //{
+            //    case "1":
+            //        Message = "Option 01";
+            //        break;
+            //    case "2":
+            //        Message = "Option 02";
+            //        break;
+            //    case "3":
+            //        Message = "Option 03";
+            //        break;
+            //    default:
+            //        Message = "Invalid";
+            //        break;
+            //}
+
+            //Message = Option switch
+            //{
+            //    "1" => "Option 01",
+            //    "2" => "Option 02",
+            //    "3" => "Option 03",
+            //    _ => "Invalid"
+            //};
+
+            //Console.WriteLine(Message);
+
+            #endregion
+
+            #region Example 02 [Property Pattern]
+            //Person person = new Person() { Id = 10, Name = "Ahmed", Age = 25 };
+
+            //string Message = person switch
+            //{
+            //    { Name: "Ahmed", Age: 10 } => "Hello Ahmed",
+            //    { Name: "Omar" } => "Hello Omar",
+            //    _ => "Invalid"
+            //};
+
+            //Console.WriteLine(Message);
+            #endregion
+
+            #region Example 03 [Nullable Type - Relational Patterns [Partially]]
+
+            //int? Number = 10;
+
+            //string Result = Number switch
+            //{
+            //    null => "Null Value",
+            //    int X when X > 0 => "Positive",
+            //    int X when X < 0 => "Negative",
+            //    _ => "Invalid"
+            //};
+
+            //Console.WriteLine(Number);
+            #endregion
+            #endregion
             #endregion
         }
     }
