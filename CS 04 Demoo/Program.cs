@@ -252,6 +252,22 @@
             //Console.WriteLine(Number);
             #endregion
             #endregion
+            //V-05
+            #region C# 9.0 [Switch Expression with Relational Patterns - Logucal Patterns - Enhanced Property Matching]
+
+            #region Example 01 [Relational Patterns] [Logical Patterns]
+            //int Number = -5;
+
+            //string Message = Number switch
+            //{
+            //    < 10 => "Less than 10",
+            //    >= 10 and <= 20 => "Between 10 and 20",
+            //    > 20 or < 0 => "Outside Range",
+            //};
+
+            //Console.WriteLine(Message);
+            #endregion
+            #endregion
             #endregion
         }
     }
