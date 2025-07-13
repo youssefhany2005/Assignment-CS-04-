@@ -101,6 +101,28 @@
             //}
             #endregion
             #endregion
+            //V-02
+            #region Example 04 [Budget] - [Switch with Go to]
+            /// Budget is 1000 => Option 01
+            /// Budget is 2000 => Option01, Option 02
+            /// Budget is 3000 => Option01, Option 02, Option 03
+            //Console.Write("Please Enter your Budget : ");
+            //int.TryParse(Console.ReadLine(), out int budget);
+            //switch(budget)
+            //{
+            //    case 3000:
+            //        Console.WriteLine("Option 03");
+            //        goto case 2000;
+            //        break;
+            //    case 2000:
+            //        Console.WriteLine("Option 02");
+            //        goto case 1000;
+            //        break;
+            //    case 1000:
+            //        Console.WriteLine("Option 01");
+            //        break;
+            //}
+            #endregion
             #endregion
 
         }
