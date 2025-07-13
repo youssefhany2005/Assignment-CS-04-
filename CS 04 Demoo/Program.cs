@@ -124,7 +124,73 @@
             //}
             #endregion
             #endregion
+            //V-03
 
+            #region Evolution of Switch in C# 
+            #region C# 7.0 [Pattern Matching - Case Guards (when)]
+            //// No Jumb Table will be created
+            //object number = 6; // boxing
+            #region Example 01 [Pattern Matching on Types]
+            //switch(number)
+            //{
+            //    case int Value:
+            //        Console.WriteLine($"{Value} is Integer");
+            //        break;
+            //    case double Value:
+            //        Console.WriteLine($"{Value} is Double");
+            //        break;
+            //    case string Value:
+            //        Console.WriteLine($"{Value} is String");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Invalud");
+            //        break;
+
+            //}
+            #endregion
+            #region Example 02 [Case Guards (when)]
+
+            //switch (number)
+            //{
+            //    case int Value when Value < 10 && Value > 5:
+            //        Console.WriteLine($"{Value} is Integer");
+            //        break;
+            //    case double Value:
+            //        Console.WriteLine($"{Value} is Double");
+            //        break;
+            //    case string Value:
+            //        Console.WriteLine($"{Value} is String");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Invalud");
+            //        break;
+            //}
+
+            #endregion
+            #region Example 03 [Use-defined Data Type]
+            //object Input = new Person() { Id = 10, Name = "Ahmed", Age = 20 };
+
+            //switch(Input)
+            //{
+            //    case int Value when Value < 10 && Value > 5:
+            //        Console.WriteLine($"{Value} is Integer");
+            //        break;
+            //    case double Value:
+            //        Console.WriteLine($"{Value} is Double");
+            //        break;
+            //    case string Value:
+            //        Console.WriteLine($"{Value} is String");
+            //        break;
+            //    case Person Value when Value.Id == 10:
+            //        Console.WriteLine("I am Person");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Invalud");
+            //        break;
+            //}
+            #endregion
+            #endregion
+            #endregion
         }
     }
 }
